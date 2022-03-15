@@ -28,7 +28,7 @@ export const InputWrap = styled.div`
     width: 260px;
     /* display: grid; */
     background: #50597b;
-    margin-left: 20px;
+    margin-left: 6px;
     margin-bottom: 20px;
     border: 1px solid #1f253d;
     border-radius: 5px;
