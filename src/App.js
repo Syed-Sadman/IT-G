@@ -24,6 +24,7 @@ import {
   CompBigCont,
   CompSmallCont,
 } from "./AppStyles.js";
+import Vid from "./components/Vid/Vid";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Menubox />
               <DoughChart />
               <LineChart />
+              <Vid />
               {/* <videoWillComehere/> */}
               <SocStack />
             </CompSmallCont>
