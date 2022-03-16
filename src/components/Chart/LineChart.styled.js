@@ -57,3 +57,39 @@ export const DData = styled.div`
     }
   }
 `;
+
+export const LineValU = styled.div`
+  background-color: #394264;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  & ul {
+    text-align: center;
+    padding: 20px 0 0 0;
+    & a {
+      background-color: #50597b;
+      width: 70px;
+      line-height: 32px;
+      padding: 7px 20px;
+      margin: 15px 5px;
+      border-radius: 5px;
+    }
+  }
+  & div {
+    display: flex;
+    padding: 5px 20px 5px 20px;
+    justify-content: space-between;
+    & p {
+      font-size: 16px;
+      color: white;
+      & span {
+        margin-left: 5px;
+        /* font-size: 14px; */
+        color: #9099b7;
+      }
+      & b {
+        color: red;
+      }
+    }
+  }
+`;

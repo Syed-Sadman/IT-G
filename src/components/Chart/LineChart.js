@@ -1,7 +1,14 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js";
-import { LineCCC } from "./LineChart.styled";
+import { LineCCC, LineValU } from "./LineChart.styled";
+
+const mArr = [
+  { month: "April", year: "2013", perc: "21" },
+  { month: "May", year: "2013", perc: "21" },
+  { month: "June", year: "2013", perc: "21" },
+];
+
 function LineChart() {
   return (
     <div>
@@ -73,7 +80,41 @@ function LineChart() {
         />
       </LineCCC>
 
-      <div></div>
+      <LineValU>
+        <ul>
+          <a href="#">Week</a>
+          <a href="#">Month</a>
+          <a href="#">Year</a>
+        </ul>
+        {/* <div> */}
+        {mArr.map(({ month, year, perc }, index) => (
+          <div key={index}>
+            <p>
+              {month}
+              <span>{year}</span>
+            </p>
+            <p>
+              <b>+</b>
+              {perc}
+              <sup>%</sup>
+            </p>
+          </div>
+        ))}
+
+        {/* <p>
+            May<span>2013</span>
+          </p>
+          <p>
+            <b>+</b>21<sup>%</sup>
+          </p>
+          <p>
+            June<span>2013</span>
+          </p>
+          <p>
+            <b>+</b>21<sup>%</sup>
+          </p> */}
+        {/* </div> */}
+      </LineValU>
     </div>
   );
 }
