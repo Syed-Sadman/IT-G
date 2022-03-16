@@ -54,7 +54,7 @@ function App() {
             <CompSmallCont>
               <Card />
               <SignCard />
-              {/* <ProgressBar /> */}
+              <ProgressBar />
               {/* <calenderWillgohere/> */}
               {/* <calenderWillGoHere/> */}
             </CompSmallCont>
